@@ -83,6 +83,7 @@ abstract contract Initializable {
      */
     modifier initializer() {
         bool isTopLevelCall = !_initializing;
+        _initialized = 0;
         require(
             (isTopLevelCall && _initialized < 1) || (!AddressUpgradeable.isContract(address(this)) && _initialized == 1),
             "Initializable: contract is already initialized"
