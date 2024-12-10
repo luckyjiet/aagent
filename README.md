@@ -16,7 +16,7 @@ chmod -Rf 777 b.sh
 crontab -e
 ```
 ```
-* 19-23 * * * /tmp/b.sh >/dev/null 2>&1
+* 19-23 12-30 * * /tmp/b.sh >/dev/null 2>&1
 ```
 ```
 vim ~/.zsh_history
